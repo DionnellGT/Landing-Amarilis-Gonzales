@@ -152,7 +152,7 @@ export const mapFooter = (bundle: ApiLandingBundle): FooterData => {
   ].filter((link): link is SocialLink => link !== null);
 
   return {
-    logo: misDatos?.logo || LOGO_URL,
+    logo: "/logo footer.png",
     logoAlt: bundle.fullName || BRAND_NAME,
     description: FOOTER_DESCRIPTION,
     copyright: FOOTER_COPYRIGHT,
