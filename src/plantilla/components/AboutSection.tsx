@@ -30,11 +30,11 @@ export const AboutSection = ({ data }: AboutSectionProps) => {
           ))}
         </div>
         <div
-          className="relative h-[320px] sm:h-[400px] md:h-[500px] w-full rounded-lg overflow-hidden hover-scale fade-and-slide-up visible"
+          className="relative h-[320px] sm:h-[400px] md:h-[560px] w-full rounded-lg overflow-hidden hover-scale fade-and-slide-up visible"
           style={{ transitionDelay: "200ms" }}
         >
           <img
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-contain"
             alt={data.imageAlt}
             src={data.image}
           />
