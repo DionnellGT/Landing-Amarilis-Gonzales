@@ -19,7 +19,7 @@ const socialIcons = {
 
 export const Footer = ({ data }: FooterProps) => {
   return (
-    <footer className="bg-primary dark:bg-primary-container mt-section-gap w-full py-stack-lg px-gutter fade-and-slide-up visible">
+    <footer className="bg-[#be6a3d] dark:bg-primary-container mt-section-gap w-full py-stack-lg px-gutter fade-and-slide-up visible">
       <div className="max-w-[1280px] mx-auto w-full flex flex-col md:flex-row justify-between items-start gap-stack-lg">
         <div className="w-full md:w-1/3">
           <img

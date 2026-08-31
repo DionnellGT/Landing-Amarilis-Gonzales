@@ -134,7 +134,7 @@ export const ContactSection = ({ data, projects }: ContactSectionProps) => {
 
         <button
           type="submit"
-          className="mb-6 md:mb-3 rounded-xl md:col-span-2 bg-primary text-on-primary font-label-md uppercase tracking-wide py-4 hover:bg-muted-gold hover:text-primary transition-colors duration-300"
+          className="mb-6 md:mb-3 rounded-xl md:col-span-2 bg-[#be6a3d] text-on-primary font-label-md uppercase tracking-wide py-4 hover:bg-muted-gold hover:text-primary transition-colors duration-300"
         >
           {data.submitLabel}
         </button>
