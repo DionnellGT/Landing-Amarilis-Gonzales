@@ -20,7 +20,6 @@ const inputClasses =
 
 export const ContactSection = ({ data, projects }: ContactSectionProps) => {
   const [isSuccess, setIsSuccess] = useState(false);
-  const [isError, setIsError]     = useState(false);
 
   const {
     register,
@@ -32,7 +31,6 @@ export const ContactSection = ({ data, projects }: ContactSectionProps) => {
 
   const onSubmit = async (data: ContactForm) => {
     setIsSuccess(false);
-    setIsError(false);
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -51,10 +49,10 @@ export const ContactSection = ({ data, projects }: ContactSectionProps) => {
         reset();
         setTimeout(() => setIsSuccess(false), 5000);
       } else {
-        setIsError(true);
+        setIsSuccess(false);
       }
     } catch {
-      setIsError(true);
+      setIsSuccess(false);
     }
   };
 
