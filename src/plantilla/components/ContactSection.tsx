@@ -146,11 +146,10 @@ export const ContactSection = ({ data, projects }: ContactSectionProps) => {
                 <select
                   id="contact-project"
                   className={`${inputClasses} appearance-none pr-10 cursor-pointer`}
-                  value={field.value}
-                  onChange={(event) => field.onChange(event.target.value)}
+                  {...field}
                 >
                   <option value="" disabled>
-                    {data.projectPlaceholder}
+                    Selecciona un proyecto
                   </option>
                   {projects.map((project) => (
                     <option key={project.id} value={project.title}>
@@ -178,9 +177,11 @@ export const ContactSection = ({ data, projects }: ContactSectionProps) => {
                <select
                  id="contact-tiempo-entrega"
                  className={`${inputClasses} appearance-none pr-10 cursor-pointer`}
-                 value={field.value}
-                 onChange={(event) => field.onChange(event.target.value)}
+                 {...field}
                >
+                 <option value="" >
+                   Selecciona una opción
+                 </option>
                  <option value="Entrega Inmediata" >
                    Entrega Inmediata
                  </option>
