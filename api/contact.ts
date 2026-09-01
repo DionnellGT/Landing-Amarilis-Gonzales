@@ -25,7 +25,7 @@ export default async function handler(req: any, res: any) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: "Web <noreply@elavellano.cl>",
+      from: "Landing Amarilis<noreply@elavellano.cl>",
       to: ["marketing@elavellano.cl", "amarilis.gonzalez@elavellano.cl"],
       replyTo: email,
       subject: `Nuevo contacto desde la web - ${nombre}`,
