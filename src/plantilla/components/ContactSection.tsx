@@ -148,7 +148,7 @@ export const ContactSection = ({ data, projects }: ContactSectionProps) => {
                   className={`${inputClasses} appearance-none pr-10 cursor-pointer`}
                   {...field}
                 >
-                  <option value="" disabled>
+                  <option value="">
                     Selecciona un proyecto
                   </option>
                   {projects.map((project) => (
